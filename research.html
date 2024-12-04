@@ -3,25 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shuhei Kaneko - Research</title>
+  <title>Research - Shuhei Kaneko</title>
   <style>
-     body {
+    body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      display: flex;
-      flex-direction: column;
-      background-color: #f5f5f5; /* 背景を薄いグレーに設定 */
+      background-color: #f5f5f5;
     }
 
     header {
-      background: #002147; /* 紺色 */
+      background: #002147;
       color: #fff;
       padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     header h1 {
@@ -35,7 +34,7 @@
     }
 
     nav a {
-      color: #ffd700; /* ゴールド */
+      color: #ffd700;
       text-decoration: none;
       font-size: 1rem;
     }
@@ -45,53 +44,52 @@
     }
 
     .content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
       padding: 2rem;
       max-width: 1200px;
       margin: auto;
     }
 
-    .text {
-      flex: 3;
-      color: #002147; /* 紺色のテキスト */
+    h2 {
+      color: #002147;
+      margin-bottom: 1rem;
     }
 
-    .photo {
-      flex: 1;
-      text-align: right;
-      padding-left: 1rem;
+    ul {
+      list-style: none;
+      padding: 0;
     }
 
-    .photo img {
-      width: 120px; /* 写真の幅を120pxに設定 */
-      height: auto;
-      border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    ul li {
+      margin-bottom: 1.5rem;
+    }
+
+    ul li a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    ul li a:hover {
+      text-decoration: underline;
     }
 
     footer {
-      background: #002147; /* 紺色 */
+      background: #002147;
       color: #fff;
       text-align: center;
       padding: 1rem 0;
       margin-top: 2rem;
     }
 
-    footer p {
-      margin: 0;
-      font-size: 0.9rem;
-    }
+    @media (max-width: 768px) {
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+      }
 
-    a {
-      color: #007bff; /* 青色 */
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+      .content {
+        padding: 1rem;
+      }
     }
   </style>
 </head>
@@ -104,61 +102,58 @@
       <a href="teaching.html">Teaching</a>
     </nav>
   </header>
+
   <div class="content">
-  <div class="text">
-  <section>
-    <h1> Research </h1>
     <h2>Published Papers</h2>
     <ul>
       <li>
         Flexible Demand Estimation with Nonparametric Income Effect: An Application to Pass-Through and Merger Analysis 
         (with Yuta Toyama, Accepted at Journal of Industrial Economics) 
-        <a href="#">[Journal Link]</a>
+        <a href="#" target="_blank">[Journal Link]</a>
       </li>
     </ul>
-  </section>
-  <section>
+
     <h2>Pre-Ph.D Publications</h2>
     <ul>
       <li>
-        Kaneko, S., & Noguchi, H. (2020). Does traditional price policy work for achieving low smoking rate?–Empirical and theoretical evaluation based on the United States aggregate data. 
-        <em>Applied Economics, 52(18), 1986-1997.</em> 
-        <a href="#">[Journal Link]</a> (Based on my undergraduate senior thesis)
+        Kaneko, S., & Noguchi, H. (2020). Does traditional price policy work for achieving low smoking rate? – Empirical and theoretical evaluation based on the United States aggregate data. 
+        <em>Applied Economics, 52(18), 1986-1997</em>. 
+        <a href="#" target="_blank">[Journal Link]</a> (Based on my undergraduate senior thesis)
       </li>
       <li>
         Kaneko, S., Noguchi, H., Fu, R., Kang, C., Kawamura, A., Amano, S., & Miyawaki, A. (2020). Differences in cancer patients’ work-cessation risk, based on gender and type of job: Examination of middle-aged and older adults in super-aged Japan. 
-        <em>PloS one, 15(1), e0227792.</em> 
-        <a href="#">[Journal Link]</a>
+        <em>PloS one, 15(1), e0227792</em>. 
+        <a href="#" target="_blank">[Journal Link]</a>
       </li>
       <li>
         Fu, R., Noguchi, H., Kaneko, S., Kawamura, A., Kang, C., Takahashi, H., & Tamiya, N. (2019). How do cardiovascular diseases harm labor force participation? Evidence of nationally representative survey data from Japan, a super-aged society. 
-        <em>PloS one, 14(7), e0219149.</em> 
-        <a href="#">[Journal Link]</a>
+        <em>PloS one, 14(7), e0219149</em>. 
+        <a href="#" target="_blank">[Journal Link]</a>
       </li>
     </ul>
-  </section>
-  <section>
+
     <h2>Working Papers</h2>
     <ul>
       <li>
         Heating Price and Infant Health 
-        <a href="#">[SSRN]</a>
+        <a href="#" target="_blank">[SSRN]</a>
       </li>
     </ul>
-  </section>
-  <section>
+
     <h2>Work in Progress</h2>
     <ul>
       <li>
-        Disentangling Sources of Variation in Cesarean Delivery Rates 
-        (with Stefanie Fischer, Heather Royer, and Corey White) 
+        Disentangling Sources of Variation in Cesarean Delivery Rates (with Stefanie Fischer, Heather Royer, and Corey White) 
         <em>[Draft coming soon]</em>
       </li>
       <li>
-        The Role of Dental Health in Human Capital Formation During Adolescent 
-        (with Cheolmin Kang)
+        The Role of Dental Health in Human Capital Formation During Adolescent (with Cheolmin Kang)
       </li>
     </ul>
-  </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Shuhei Kaneko. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
