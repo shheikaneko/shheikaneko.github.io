@@ -5,47 +5,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shuhei Kaneko - Research</title>
   <style>
-    body {
+     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
-      background-color: #f5f5f5;
-      color: #333;
+      display: flex;
+      flex-direction: column;
+      background-color: #f5f5f5; /* 背景を薄いグレーに設定 */
     }
+
     header {
-      background: #002147; /* Navy color */
+      background: #002147; /* 紺色 */
       color: #fff;
-      text-align: center;
-      padding: 1rem;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
-    section {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    nav {
+      display: flex;
+      gap: 1rem;
     }
-    section h2 {
-      color: #002147;
-      margin-top: 0;
+
+    nav a {
+      color: #ffd700; /* ゴールド */
+      text-decoration: none;
+      font-size: 1rem;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+
+    nav a:hover {
+      text-decoration: underline;
     }
-    li {
-      margin-bottom: 1.5rem;
+
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
     }
+
+    .text {
+      flex: 3;
+      color: #002147; /* 紺色のテキスト */
+    }
+
+    .photo {
+      flex: 1;
+      text-align: right;
+      padding-left: 1rem;
+    }
+
+    .photo img {
+      width: 120px; /* 写真の幅を120pxに設定 */
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background: #002147; /* 紺色 */
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
     a {
-      color: #007bff;
+      color: #007bff; /* 青色 */
       text-decoration: none;
     }
+
     a:hover {
       text-decoration: underline;
     }
@@ -53,7 +97,12 @@
 </head>
 <body>
   <header>
-    <h1>Shuhei Kaneko - Research</h1>
+    <h1>Shuhei Kaneko</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
   </header>
   <section>
     <h2>Published Papers</h2>
