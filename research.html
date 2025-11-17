@@ -84,6 +84,27 @@
         padding: 1rem;
       }
     }
+
+      .abs-btn {
+        background: none;
+        border: none;
+        color: #003366; /* 落ち着いたネイビー寄り */
+        cursor: pointer;
+        font-size: 1rem;
+        padding: 0;
+        margin-top: 0.3rem;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      .abs-btn:hover {
+        text-decoration: underline;
+        color: #001f4d; /* 少し濃い色：hover の微妙なアクセント */
+      }
+
+      .abstract {
+        margin-top: 0.5rem;
+      }
   </style>
 </head>
 <body>
@@ -130,7 +151,7 @@
         
         <button class="abs-btn" onclick="toggleAbstract(this)">Abstract ▼</button>
         <div class="abstract" style="display: none; padding-left: 2em;">
-         Cesarean section rates vary widely across U.S. counties, yet it remains unclear how much ...
+         Cesarean section rates vary widely across U.S. counties, yet it remains unclear how much of this variation reflects demand-side factors (such as patient risk or preferences) versus supply-side factors (such as physician practices or hospital incentives). We develop a new empirical strategy to isolate the influence of supply-side forces. Exploiting hospital obstetric unit closures from 1989–2019 that reallocate some mothers to counties with different C-section rates, we find that a one–percentage-point increase in the delivery county’s rate raises a mother’s likelihood of a C-section by roughly one point. The results point to a dominant role for provider behavior and local practice norms in driving geographic variation in C-section use, the most common major surgery in the United States.
         </div>
       </li>
       <li>
