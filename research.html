@@ -157,6 +157,19 @@
     </ul>
   </div>
 
+  <script>
+    function toggleAbstract(btn) {
+      const abs = btn.nextElementSibling;
 
+      if (abs.style.display === "none" || abs.style.display === "") {
+        abs.style.display = "block";
+        btn.textContent = "Abstract ▲";
+      } else {
+        abs.style.display = "none";
+        btn.textContent = "Abstract ▼";
+      }
+    }
+  </script>
+  
 </body>
 </html>
