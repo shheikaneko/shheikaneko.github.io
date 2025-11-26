@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shuhei Kaneko's Website</title>
   <style>
+    /* 基本フォントサイズ（rem の基準） */
+    html {
+      font-size: 14px;
+    }
+
     /* ベース設定 */
     body {
       font-family: Arial, sans-serif;
@@ -13,14 +18,13 @@
       line-height: 1.6;
       background-color: #f5f5f5;
       color: #222;
-      font-size: 14px;
     }
 
     /* ヘッダー */
     header {
       background: #002147;
       color: #fff;
-      padding: 1rem 2rem;
+      padding: 0.9rem 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -29,7 +33,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
     }
 
     nav {
@@ -40,21 +44,21 @@
     nav a {
       color: #ffd700;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     nav a:hover {
       text-decoration: underline;
     }
 
-    /* コンテンツ全体（カード風） */
+    /* コンテンツ（カード風） */
     .content {
       max-width: 1000px;
       margin: 2rem auto;
       padding: 2rem;
       background: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
     .content-inner {
@@ -78,23 +82,23 @@
       width: 150px;
       height: auto;
       border-radius: 50%;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
 
     .content h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       margin-top: 0;
       margin-bottom: 0.75rem;
     }
 
     h2 {
       font-size: 1.2rem;
-      margin-top: 1.5rem;
+      margin-top: 1.4rem;
       margin-bottom: 0.5rem;
     }
 
     p {
-      margin: 0.5rem 0;
+      margin: 0.4rem 0;
     }
 
     a {
@@ -116,42 +120,65 @@
     }
 
     /* スマホ用調整 */
-  @media (max-width: 768px) {
-  /* 1. まず body のサイズ変更 */
-  body {
-    font-size: 13.5px;
-  }
+    @media (max-width: 768px) {
+      html {
+        font-size: 12px;  /* 全体を少し小さめに */
+      }
 
-  /* 2. 見出し */
-  header h1 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-  }
+      header {
+        padding: 0.75rem 1rem;
+      }
 
-  .content h1 {
-    font-size: 1.6rem;
-  }
+      header h1 {
+        font-size: 1.35rem;
+        margin-bottom: 0.2rem;
+      }
 
-  h2 {
-    font-size: 1.2rem;
-  }
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+      }
 
-  /* 3. レイアウト（余白・並びなど） */
-  header {
-    padding: 0.75rem 1rem;
-  }
+      nav a {
+        font-size: 0.9rem;
+      }
 
-  nav {
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 0.5rem;
-  }
+      .content {
+        padding: 1.1rem 0.9rem;   /* 左右の余白を縮めて本文の幅を確保 */
+        margin: 1.1rem 0.7rem;
+      }
 
-  .content {
-    padding: 1.5rem;
-    margin: 1.5rem 1rem;
-  }
-}
+      .content-inner {
+        flex-direction: column;   /* 写真とテキストを縦並びに */
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .photo {
+        order: -1;               /* 写真を上に持ってくる（好みで外してOK） */
+      }
+
+      .photo img {
+        width: 115px;            /* 写真を少し小さく */
+      }
+
+      .text {
+        width: 100%;
+      }
+
+      .content h1 {
+        font-size: 1.45rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+      }
+
+      ul {
+        margin-left: 1em;
+      }
+    }
   </style>
 </head>
 <body>
@@ -166,12 +193,16 @@
 
   <div class="content">
     <div class="content-inner">
+      <div class="photo">
+        <img src="kanekoshuhei.jpg" alt="Shuhei Kaneko">
+      </div>
+
       <div class="text">
         <h1>Welcome!</h1>
         <p>
           I am a Ph.D. candidate in the Economics Department at UC Santa Barbara.<br>
           My research focuses broadly on health economics, labor economics, and applied econometric methods in general.<br>
-          You can download my CV
+          You can download my CV 
           <a href="https://shheikaneko.github.io/CV_Shuhei_Kaneko.pdf" target="_blank">here</a>.
         </p>
 
@@ -188,17 +219,7 @@
           <li>Dec. 16th, 2025: Waseda Univ.</li>
         </ul>
       </div>
-
-      <div class="photo">
-        <img src="kanekoshuhei.jpg" alt="Shuhei Kaneko">
-      </div>
     </div>
   </div>
 </body>
 </html>
-
-
-
-
-
-
