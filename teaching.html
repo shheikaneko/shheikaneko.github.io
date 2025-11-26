@@ -98,39 +98,43 @@
     }
 
     /* スマホ用調整 */
-    @media (max-width: 768px) {
-      header {
-        padding: 0.75rem 1rem;
-      }
+@media (max-width: 768px) {
+  /* 1. まず body のサイズ変更 */
+  body {
+    font-size: 13.5px;
+  }
 
-      header h1 {
-        font-size: 1.4rem;
-        margin-bottom: 0.3rem;
-      }
+  /* 2. 見出し */
+  header h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+  }
 
-      nav {
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        gap: 0.5rem;
-      }
+  .content h1 {
+    font-size: 1.6rem;
+  }
 
-      .content {
-        padding: 1.5rem;
-        margin: 1.5rem 1rem;
-      }
+  h2 {
+    font-size: 1.2rem;
+  }
 
-      .content h1 {
-        font-size: 1.6rem;
-      }
+  /* 3. レイアウト（余白・並びなど） */
+  header {
+    padding: 0.75rem 1rem;
+  }
 
-      h2 {
-        font-size: 1.2rem;
-      }
+  nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 0.5rem;
+  }
 
-      body {
-        font-size: 16px;
-      }
-    }
+  .content {
+    padding: 1.5rem;
+    margin: 1.5rem 1rem;
+  }
+}
+
   </style>
 </head>
 <body>
