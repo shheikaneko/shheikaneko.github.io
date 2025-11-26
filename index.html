@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shuhei Kaneko's Website</title>
   <style>
+    /* ベース設定 */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
       background-color: #f5f5f5;
+      color: #222;
     }
 
+    /* ヘッダー */
     header {
       background: #002147;
       color: #fff;
@@ -25,7 +28,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
     nav {
@@ -43,14 +46,21 @@
       text-decoration: underline;
     }
 
+    /* コンテンツ全体（カード風） */
     .content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .content-inner {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
       gap: 2rem;
     }
 
@@ -70,22 +80,81 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
+    .content h1 {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 0.75rem;
+    }
 
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
 
+    p {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      margin: 0.3rem 0 0 1.2em;
+      padding-left: 0;
+    }
+
+    li {
+      margin-bottom: 0.3rem;
+    }
+
+    /* スマホ用調整 */
     @media (max-width: 768px) {
+      header {
+        padding: 0.75rem 1rem;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.3rem;
+      }
+
+      nav {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.5rem;
+      }
+
       .content {
+        margin: 1.5rem 1rem;
+        padding: 1.5rem;
+      }
+
+      .content-inner {
         flex-direction: column;
         align-items: center;
+      }
+
+      .text {
+        width: 100%;
       }
 
       .photo img {
         width: 120px;
       }
 
-      nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.5rem;
+      body {
+        font-size: 16px;
+      }
+
+      .content h1 {
+        font-size: 1.6rem;
       }
     }
   </style>
@@ -101,36 +170,38 @@
   </header>
 
   <div class="content">
-    <div class="text">
-      <h1>Welcome!</h1>
-      <p>
-        I am a Ph.D. candidate in the Economics Department at UC Santa Barbara.<br>
-        My research focuses broadly on health economics, labor economics, and applied econometric methods in general.<br>
-        You can download my CV 
-        <a href="https://shheikaneko.github.io/CV_Shuhei_Kaneko.pdf" target="_blank">here</a>.
-      </p>
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:shuhei@ucsb.edu">shuhei@ucsb.edu</a></p>
+    <div class="content-inner">
+      <div class="text">
+        <h1>Welcome!</h1>
+        <p>
+          I am a Ph.D. candidate in the Economics Department at UC Santa Barbara.<br>
+          My research focuses broadly on health economics, labor economics, and applied econometric methods in general.<br>
+          You can download my CV
+          <a href="https://shheikaneko.github.io/CV_Shuhei_Kaneko.pdf" target="_blank">here</a>.
+        </p>
 
-      <h2>Upcoming Presentations</h2>
-      <ul>
-      <li><del> Jun. 24th, 2025: ASHEcon 2025</del> </li>
-      <li><del> Jul. 17th, 2025: Musashi Univ.</del> </li>
-      <li><del> Jul. 21th, 2025: IHEA 2025</del> </li>
-      <li><del> Sep. 13th, 2025: Japanese Economic Association Fall Meeting 2025</del> </li>
-      <li> <del> Nov. 8th, 2025: Applied Microeconomics Conference (Online) </del> </li>
-      <li> Dec. 16th, 2025: Waseda Univ. </li>
-      </ul>
-  </div>
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:shuhei@ucsb.edu">shuhei@ucsb.edu</a></p>
 
-    <div class="photo">
-      <img src="kanekoshuhei.jpg" alt="Shuhei Kaneko">
+        <h2>Upcoming Presentations</h2>
+        <ul>
+          <li><del>Jun. 24th, 2025: ASHEcon 2025</del></li>
+          <li><del>Jul. 17th, 2025: Musashi Univ.</del></li>
+          <li><del>Jul. 21st, 2025: IHEA 2025</del></li>
+          <li><del>Sep. 13th, 2025: Japanese Economic Association Fall Meeting 2025</del></li>
+          <li><del>Nov. 8th, 2025: Applied Microeconomics Conference (Online)</del></li>
+          <li>Dec. 16th, 2025: Waseda Univ.</li>
+        </ul>
+      </div>
+
+      <div class="photo">
+        <img src="kanekoshuhei.jpg" alt="Shuhei Kaneko">
+      </div>
     </div>
   </div>
-
-
 </body>
 </html>
+
 
 
 

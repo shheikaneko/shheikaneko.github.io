@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research - Shuhei Kaneko</title>
   <style>
+    /* 全体の基本設定 */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
       line-height: 1.6;
       background-color: #f5f5f5;
+      color: #222;
     }
 
+    /* ヘッダー */
     header {
       background: #002147;
       color: #fff;
@@ -25,7 +28,7 @@
 
     header h1 {
       margin: 0;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
     }
 
     nav {
@@ -43,23 +46,40 @@
       text-decoration: underline;
     }
 
+    /* コンテンツ本体 */
     .content {
       padding: 2rem;
-      max-width: 1200px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .content h1 {
+      font-size: 1.8rem;
+      margin-top: 0;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 0.5rem;
     }
 
     h2 {
-      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      margin-top: 1.8rem;
+      margin-bottom: 0.8rem;
     }
 
+    /* リスト（論文リスト） */
     ul {
-      list-style: none;
-      padding: 0;
+      margin-left: 1.2em;
+      margin-bottom: 1.8rem;
+      padding-left: 0;
+      list-style: disc;
     }
 
     ul li {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1rem;
     }
 
     ul li a {
@@ -71,40 +91,72 @@
       text-decoration: underline;
     }
 
+    em {
+      font-style: italic;
+    }
 
+    /* Abstract ボタン */
+    .abs-btn {
+      background: none;
+      border: none;
+      color: #003366;
+      cursor: pointer;
+      font-size: 0.95rem;
+      padding: 0;
+      margin-top: 0.3rem;
+      font-weight: 600;
+      display: inline-block;
+    }
 
+    .abs-btn:hover {
+      text-decoration: underline;
+      color: #001f4d;
+    }
+
+    .abstract {
+      margin-top: 0.5rem;
+      padding-left: 1.5em;
+      font-size: 0.95rem;
+    }
+
+    /* スマホ用調整 */
     @media (max-width: 768px) {
+      header {
+        padding: 0.75rem 1rem;
+      }
+
+      header h1 {
+        font-size: 1.4rem;
+        margin-bottom: 0.3rem;
+      }
+
       nav {
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 0.5rem;
       }
 
       .content {
-        padding: 1rem;
+        padding: 1.25rem;
+        margin: 1.5rem 1rem;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      .content h1 {
+        font-size: 1.6rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      ul {
+        margin-left: 1em;
       }
     }
-
-      .abs-btn {
-        background: none;
-        border: none;
-        color: #003366; /* 落ち着いたネイビー寄り */
-        cursor: pointer;
-        font-size: 1rem;
-        padding: 0;
-        margin-top: 0.3rem;
-        font-weight: 600;
-        display: inline-block;
-      }
-
-      .abs-btn:hover {
-        text-decoration: underline;
-        color: #001f4d; /* 少し濃い色：hover の微妙なアクセント */
-      }
-
-      .abstract {
-        margin-top: 0.5rem;
-      }
   </style>
 </head>
 <body>
@@ -118,27 +170,28 @@
   </header>
 
   <div class="content">
-    <h1> Research </h1>
+    <h1>Research</h1>
+
     <h2>Published Papers</h2>
     <ul>
       <li>
         Flexible Demand Estimation with Nonparametric Income Effect: An Application to Pass-Through and Merger Analysis. 2025
-        (with Yuta Toyama) <em>Journal of Industrial Economics 73 (1), 186-233 </em> 
+        (with Yuta Toyama) <em>Journal of Industrial Economics 73(1), 186–233</em>. 
         <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/joie.12406" target="_blank">[Journal Link]</a>
       </li>
       <li>
         Does traditional price policy work for achieving low smoking rate? – Empirical and theoretical evaluation based on the United States aggregate data. 2020 (with Haruko Noguchi)
-        <em>Applied Economics, 52(18), 1986-1997</em>. 
+        <em>Applied Economics, 52(18), 1986–1997</em>. 
         <a href="https://www.tandfonline.com/doi/full/10.1080/00036846.2020.1728226" target="_blank">[Journal Link]</a> (Based on my undergraduate senior thesis)
       </li>
       <li>
-       Differences in cancer patients’ work-cessation risk, based on gender and type of job: Examination of middle-aged and older adults in super-aged Japan. 2020 (with Haruko Noguchi, Rong Fu, Cheolmin Kang, Akira Kawamura, Shinsuke Amano, and Atsushi Miyawaki)
-        <em>PloS one, 15(1), e0227792</em>. 
+        Differences in cancer patients’ work-cessation risk, based on gender and type of job: Examination of middle-aged and older adults in super-aged Japan. 2020 (with Haruko Noguchi, Rong Fu, Cheolmin Kang, Akira Kawamura, Shinsuke Amano, and Atsushi Miyawaki)
+        <em>PLOS ONE, 15(1), e0227792</em>. 
         <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0227792" target="_blank">[Journal Link]</a>
       </li>
       <li>
-        How do cardiovascular diseases harm labor force participation? Evidence of nationally representative survey data from Japan, a super-aged society. 2019 (with Rongu Fu, Haruko Noguchi, Cheolmin Kang, Akira Kawamura, Hideto Takahashi,Nanako Tamiya)
-        <em>PloS one, 14(7), e0219149</em>. 
+        How do cardiovascular diseases harm labor force participation? Evidence of nationally representative survey data from Japan, a super-aged society. 2019 (with Rongu Fu, Haruko Noguchi, Cheolmin Kang, Akira Kawamura, Hideto Takahashi, Nanako Tamiya)
+        <em>PLOS ONE, 14(7), e0219149</em>. 
         <a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0219149" target="_blank">[Journal Link]</a>
       </li>
     </ul>
@@ -147,20 +200,20 @@
     <ul>
       <li> 
         Disentangling Sources of Variation in Cesarean Delivery Rates (with Stefanie Fischer, Heather Royer, and Corey White) 
-        <a href="https://www.nber.org/papers/w34469" target="_blank">[NBER]</a>　<br>
+        <a href="https://www.nber.org/papers/w34469" target="_blank">[NBER]</a><br>
         
         <button class="abs-btn" onclick="toggleAbstract(this)">Abstract ▼</button>
-        <div class="abstract" style="display: none; padding-left: 2em;">
-         Cesarean section rates vary widely across U.S. counties, yet it remains unclear how much of this variation reflects demand-side factors (such as patient risk or preferences) versus supply-side factors (such as physician practices or hospital incentives). We develop a new empirical strategy to isolate the influence of supply-side forces. Exploiting hospital obstetric unit closures from 1989–2019 that reallocate some mothers to counties with different C-section rates, we find that a one–percentage-point increase in the delivery county’s rate raises a mother’s likelihood of a C-section by roughly one point. The results point to a dominant role for provider behavior and local practice norms in driving geographic variation in C-section use, the most common major surgery in the United States.
+        <div class="abstract" style="display: none;">
+          Cesarean section rates vary widely across U.S. counties, yet it remains unclear how much of this variation reflects demand-side factors (such as patient risk or preferences) versus supply-side factors (such as physician practices or hospital incentives). We develop a new empirical strategy to isolate the influence of supply-side forces. Exploiting hospital obstetric unit closures from 1989–2019 that reallocate some mothers to counties with different C-section rates, we find that a one–percentage-point increase in the delivery county’s rate raises a mother’s likelihood of a C-section by roughly one point. The results point to a dominant role for provider behavior and local practice norms in driving geographic variation in C-section use, the most common major surgery in the United States.
         </div>
       </li>
       <li>
         Heating Price and Infant Health 
-        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993823" target="_blank">[SSRN]</a> -- <em>Revision Invited</em> <br>
+        <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4993823" target="_blank">[SSRN]</a> &mdash; <em>Revision Invited</em><br>
        
         <button class="abs-btn" onclick="toggleAbstract(this)">Abstract ▼</button>
-        <div class="abstract" style="display: none; padding-left: 2em;">
-          This paper shows how the price of home heating can affect adverse birth outcomes when mothers are exposed to cold temperatures. To this end, I leverage geographical variation in the type of energy used for home heating, temporal variation in natural gas prices triggered by the fracking boom, and variation in exposure to cold temperatures. Using US birth records for 2001-2015, I find evidence that higher home-heating prices increase the risk of serious birth conditions such as very preterm birth, when pregnant women are exposed to cold temperatures. As a potential mechanism, I examine how rising heating prices force households to reallocate spending: despite possibly reducing heating use, if the demand for heating is inelastic, it will leave less budget for other goods. Consistent with this hypothesis, I find that higher energy prices increase energy expenses and reduce healthcare expenditures. Heterogeneity analysis reveals that the detrimental impact of higher heating prices is pronounced in economically disadvantaged subpopulations.           
+        <div class="abstract" style="display: none;">
+          This paper shows how the price of home heating can affect adverse birth outcomes when mothers are exposed to cold temperatures. To this end, I leverage geographical variation in the type of energy used for home heating, temporal variation in natural gas prices triggered by the fracking boom, and variation in exposure to cold temperatures. Using US birth records for 2001–2015, I find evidence that higher home-heating prices increase the risk of serious birth conditions such as very preterm birth, when pregnant women are exposed to cold temperatures. As a potential mechanism, I examine how rising heating prices force households to reallocate spending: despite possibly reducing heating use, if the demand for heating is inelastic, it will leave less budget for other goods. Consistent with this hypothesis, I find that higher energy prices increase energy expenses and reduce healthcare expenditures. Heterogeneity analysis reveals that the detrimental impact of higher heating prices is pronounced in economically disadvantaged subpopulations.
         </div>
       </li>
     </ul>
@@ -168,13 +221,12 @@
     <h2>Work in Progress</h2>
     <ul>
       <li>
-        Beyond Cavities: The Effects of Low-Level Fluoride Exposure in Childhood on Dental Health, Cognitive Ability and Self-Esteem (with Cheolmin Kang)　<!-- <a href="https://shheikaneko.github.io/Fluoride_ver_latest.pdf" target="_blank">[Early Draft (in PDF)]</a> -->　<br>
+        Beyond Cavities: The Effects of Low-Level Fluoride Exposure in Childhood on Dental Health, Cognitive Ability and Self-Esteem (with Cheolmin Kang)<br>
         <button class="abs-btn" onclick="toggleAbstract(this)">Abstract ▼</button>
-        <div class="abstract" style="display: none; padding-left: 2em;">
+        <div class="abstract" style="display: none;">
           While the effects of fluoride in drinking water on dental health and human capital remain central to public health debates, most existing evidence focuses on high dosages from artificial fluoridation. We estimate the causal impacts of childhood exposure to much lower fluoride levels, exploiting quasi-exogenous variation in naturally occurring concentrations shaped by regional geology in Japan. Combining this variation with longitudinal survey data, nationally representative medical claims, and patient surveys, we provide comprehensive evidence on fluoride’s benefits. Even at low concentrations, fluoride substantially improves dental health in childhood and adolescence, with particularly strong effects for girls and children from lower socioeconomic backgrounds. In contrast to concerns raised by studies of higher exposures, we find no adverse effects on cognitive performance or educational attainment. Importantly, fluoride exposure enhances self-esteem among girls, operating through improved appearance: fewer cavities reduce the likelihood of malocclusion and other visible dental issues, which are particularly salient during adolescence. These improvements in dental aesthetics foster confidence and socio-emotional skills. Our findings highlight the role of oral health in shaping non-cognitive development and underscore the broader policy relevance of fluoride exposure.
-      </div> 
+        </div> 
       </li>
-                  
     </ul>
   </div>
 
@@ -191,6 +243,6 @@
       }
     }
   </script>
-  
 </body>
 </html>
+
