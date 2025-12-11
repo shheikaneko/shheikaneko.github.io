@@ -137,13 +137,18 @@
       color: #001f4d;
     }
 
-    /* Abstract 本文 */
+    /* Abstract 本文（囲い付き） */
     .abstract {
       margin-top: 0.5rem;
-      padding-left: 1.2em;
+      padding: 0.8rem 1rem;
       font-size: 0.9rem;
       line-height: 1.5;
-      display: none;
+      display: none; /* 初期は非表示 */
+
+      border: 1px solid #d0d7e5;
+      border-left: 3px solid #c5d2e8;
+      border-radius: 6px;
+      background-color: #f5f8fc;
     }
 
     /* スマホ用調整 */
@@ -208,7 +213,10 @@
 
       .abstract {
         font-size: 0.85rem;
-        padding-left: 1em;
+        padding: 0.7rem 0.9rem;
+        border: 1px solid #d0d7e5;
+        border-left: 3px solid #c5d2e8;
+        background-color: #f5f8fc;
       }
     }
   </style>
@@ -258,7 +266,7 @@
         <a href="https://www.nber.org/papers/w34469" target="_blank">[NBER]</a><br>
         
         <button class="abs-btn" onclick="toggleAbstract(this)">Abstract ▼</button>
-        <div class="abstract" style="display: none;">
+        <div class="abstract">
           Cesarean section rates vary widely across U.S. counties, yet it remains unclear how much of this variation reflects demand-side factors (such as patient risk or preferences) versus supply-side factors (such as physician practices or hospital incentives). We develop a new empirical strategy to isolate the influence of supply-side forces. Exploiting hospital obstetric unit closures from 1989–2019 that reallocate some mothers to counties with different C-section rates, we find that a one–percentage-point increase in the delivery county’s rate raises a mother’s likelihood of a C-section by roughly one point. The results point to a dominant role for provider behavior and local practice norms in driving geographic variation in C-section use, the most common major surgery in the United States.
         </div>
       </li>
@@ -268,7 +276,7 @@
         &mdash; <em>Revise and Resubmit at American Journal of Health Economics</em><br>
        
         <button class="abs-btn" onclick="toggleAbstract(this)">Abstract ▼</button>
-        <div class="abstract" style="display: none;">
+        <div class="abstract">
           This paper shows how the price of home heating can affect adverse birth outcomes when mothers are exposed to cold temperatures. To this end, I leverage geographical variation in the type of energy used for home heating, temporal variation in natural gas prices triggered by the fracking boom, and variation in exposure to cold temperatures. Using US birth records for 2001–2015, I find evidence that higher home-heating prices increase the risk of serious birth conditions such as very preterm birth, when pregnant women are exposed to cold temperatures. As a potential mechanism, I examine how rising heating prices force households to reallocate spending: despite possibly reducing heating use, if the demand for heating is inelastic, it will leave less budget for other goods. Consistent with this hypothesis, I find that higher energy prices increase energy expenses and reduce healthcare expenditures. Heterogeneity analysis reveals that the detrimental impact of higher heating prices is pronounced in economically disadvantaged subpopulations.
         </div>
       </li>
@@ -279,7 +287,7 @@
       <li>
         Beyond Cavities: The Effects of Low-Level Fluoride Exposure in Childhood on Dental Health, Cognitive Ability and Self-Esteem (with Cheolmin Kang)<br>
         <button class="abs-btn" onclick="toggleAbstract(this)">Abstract ▼</button>
-        <div class="abstract" style="display: none;">
+        <div class="abstract">
           While the effects of fluoride in drinking water on dental health and human capital remain central to public health debates, most existing evidence focuses on high dosages from artificial fluoridation. We estimate the causal impacts of childhood exposure to much lower fluoride levels, exploiting quasi-exogenous variation in naturally occurring concentrations shaped by regional geology in Japan. Combining this variation with longitudinal survey data, nationally representative medical claims, and patient surveys, we provide comprehensive evidence on fluoride’s benefits. Even at low concentrations, fluoride substantially improves dental health in childhood and adolescence, with particularly strong effects for girls and children from lower socioeconomic backgrounds. In contrast to concerns raised by studies of higher exposures, we find no adverse effects on cognitive performance or educational attainment. Importantly, fluoride exposure enhances self-esteem among girls, operating through improved appearance: fewer cavities reduce the likelihood of malocclusion and other visible dental issues, which are particularly salient during adolescence. These improvements in dental aesthetics foster confidence and socio-emotional skills. Our findings highlight the role of oral health in shaping non-cognitive development and underscore the broader policy relevance of fluoride exposure.
         </div> 
       </li>
@@ -301,4 +309,3 @@
   </script>
 </body>
 </html>
-
